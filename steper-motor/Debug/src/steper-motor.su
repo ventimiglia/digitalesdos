@@ -1,0 +1,7 @@
+gpio_17xx_40xx.h:144:20:Chip_GPIO_SetPinDIROutput	16	static
+gpio_17xx_40xx.h:408:20:Chip_GPIO_SetPinOutHigh	16	static
+gpio_17xx_40xx.h:450:20:Chip_GPIO_SetPinOutLow	16	static
+steper-motor.c:16:5:main	8	static
+steper-motor.c:26:6:InitHardware	8	static
+steper-motor.c:32:6:InitSetOutput	8	static
+steper-motor.c:44:6:Girar	8	static

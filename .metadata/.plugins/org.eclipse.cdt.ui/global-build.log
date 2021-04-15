@@ -1,0 +1,40 @@
+23:20:52 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for 'all'.
+23:20:52 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for 'all'.
+23:20:52 **** Incremental Build of configuration Debug for project steper-motor ****
+make -r -j8 all 
+Building file: ../src/steper-motor.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__LPC17XX__ -D__REDLIB__ -I"S:\UNLaM\Tecnicas Digitales II\step-motor-workspace\lpc_board_nxp_lpcxpresso_1769\inc" -I"S:\UNLaM\Tecnicas Digitales II\step-motor-workspace\lpc_chip_175x_6x\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fmerge-constants -fmacro-prefix-map="../src/"=. -mcpu=cortex-m3 -mthumb -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/steper-motor.d" -MT"src/steper-motor.o" -MT"src/steper-motor.d" -o "src/steper-motor.o" "../src/steper-motor.c"
+Finished building: ../src/steper-motor.c
+ 
+Building target: steper-motor.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"S:\UNLaM\Tecnicas Digitales II\step-motor-workspace\lpc_board_nxp_lpcxpresso_1769\Debug" -L"S:\UNLaM\Tecnicas Digitales II\step-motor-workspace\lpc_chip_175x_6x\Debug" -Xlinker -Map="steper-motor.map" -Xlinker --cref -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "steper-motor_Debug.ld" -o "steper-motor.axf"  ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/steper-motor.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        4628 B       512 KB      0.88%
+        RamLoc32:          16 B        32 KB      0.05%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: steper-motor.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "steper-motor.axf"; # arm-none-eabi-objcopy -v -O binary "steper-motor.axf" "steper-motor.bin" ; # checksum -p LPC1769 -d "steper-motor.bin";
+   text	   data	    bss	    dec	    hex	filename
+   4624	      4	     12	   4640	   1220	steper-motor.axf
+ 
+23:21:06 **** Incremental Build of configuration Debug for project lpc_board_nxp_lpcxpresso_1769 ****
+make -r all 
+make: Nothing to be done for 'all'.
+23:21:06 **** Incremental Build of configuration Debug for project lpc_chip_175x_6x ****
+make -r all 
+make: Nothing to be done for 'all'.
+23:21:06 **** Incremental Build of configuration Debug for project steper-motor ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+23:21:08 **** Incremental Build of configuration Debug for project steper-motor ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
